@@ -19,7 +19,7 @@ require("dotenv").config();
 
 
 app.use(cors({
-  origin: 'https://tele-chat-orcin.vercel.app/',
+  origin: 'https://tele-chat-orcin.vercel.app',
   // origin: 'http://localhost:3000',
   // origin: '*',
   credentials: true,
@@ -51,7 +51,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://tele-chat-orcin.vercel.app/",
+    origin: "https://tele-chat-orcin.vercel.app",
     credentials: true,
   },
 });
